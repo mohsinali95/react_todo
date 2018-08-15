@@ -42,7 +42,9 @@ class Counter extends Component {
     editItem(ind,text){
         let arr = this.state.todoItem;
         arr[ind].item = text
-        this.setState()
+        this.setState({
+            todoItem: arr
+        })
     }
     render() {
         return (
